@@ -1,0 +1,14 @@
+The user wants a comparison between SHL assessments.
+
+Conversation so far:
+{conversation_history}
+
+Catalog data for the assessments being compared (this is the ONLY source of
+truth — do not add facts not present here):
+{catalog_items}
+
+Write a clear, structured comparison (use short paragraphs or a compact
+markdown table) covering: purpose, what each measures, duration, and
+recommended use case. If one of the requested assessments was not found in
+the catalog data above, say so explicitly instead of guessing at its
+properties.

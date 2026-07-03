@@ -1,0 +1,21 @@
+Conversation so far:
+{conversation_history}
+
+The user's hiring context gathered so far:
+{context_summary}
+
+Retrieved catalog context (the ONLY assessments you are allowed to mention or
+recommend — do not add, remove, or invent items):
+{retrieved_items}
+
+Write a short, natural reply (2-4 sentences) that:
+- Confirms you understood their need in your own words.
+- Briefly explains WHY these particular assessments fit (tie back to the
+  role/skills/level they described).
+- Does NOT repeat the assessment names/urls/durations verbatim as a list —
+  the structured cards are rendered separately in the UI, so your text
+  should feel like a colleague's explanation, not a duplicate table.
+- If this is a refinement (the user changed a constraint), acknowledge the
+  update explicitly ("Updated the shortlist to also include...").
+
+Reply only with the reply text, nothing else.
