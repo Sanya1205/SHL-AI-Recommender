@@ -65,8 +65,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const updateProfile: AuthContextValue["updateProfile"] = async (updates) => {
-    try {
-      const updated = await updateProfileRequest(updates);
+  try {
+    const sanitizedUpdates = {
+      ...updates,
+      company: updates.company ?? undefined,
+    };
+    const updated = await updateProfileRequest(sanitizedUpdates);
       setUser(updated);
       return { ok: true };
     } catch (error) {
